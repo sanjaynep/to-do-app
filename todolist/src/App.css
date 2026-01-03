@@ -1,0 +1,91 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.todo {
+  background: #111;
+  min-height: 100vh;
+  padding: 2rem 0;
+  border-radius: 12px;
+  color: #fff;
+}
+
+.todo form {
+  margin-bottom: 2rem;
+}
+
+.todo input {
+  height: 32px;
+  width: 250px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #222;
+  color: #fff;
+}
+
+.todo input::placeholder {
+  color: #aaa;
+}
+
+.todolist {
+  width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content:center ;
+  align-items: center;
+}
+
+.todolist ul {
+  width: 90%;
+  border: solid 1px #444;
+  background: #222;
+  padding: 10px 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.todolist li {
+  list-style: none;
+  text-align: left;
+  font-size: 18px;
+  color: white;
+  margin: 0;
+  flex: 1 1 auto;
+
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.todolist span {
+  color: #ff5252;
+  cursor: pointer;
+  margin-left: 16px;
+  font-size: 20px;
+  transition: color 0.2s;
+  flex: 0 0 auto;
+}
+
+.todolist span:hover {
+  color: #ff0000;
+}
+
+.todolist li.active {
+  text-decoration: line-through;
+  text-decoration-color: #ff0000;
+  color: green;   
+}                
